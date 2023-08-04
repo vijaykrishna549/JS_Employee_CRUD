@@ -51,6 +51,7 @@ function renderEmployees() {
   empData.forEach((employee) => {
     console.log(employee, "Employee");
     const row = document.createElement("tr");
+    row.id = "trElement";
     row.innerHTML = `
                 <td>${employee.id}</td>
                 <td>${employee.name}</td>
@@ -60,8 +61,8 @@ function renderEmployees() {
                 <td> ${employee.salary}</td>
                 <td> ${employee.date}</td>
                 <td>
-                    <button onclick="editEmployee(${employee.id})">Edit</button>
-                    <button onclick="deleteById(${employee.id})">Delete</button>
+                <i class="fa fa-pencil" id="pens" onclick="editEmployee(${employee.id})"style="font-size:24px"></i>
+                <i class="fa fa-trash-o" id="trs" onclick="deleteById(${employee.id})"style="font-size:24px"></i>
                 </td>
             `;
     employeeTable.appendChild(row);

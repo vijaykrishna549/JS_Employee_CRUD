@@ -5,6 +5,10 @@ body{
 *{
     box-sizing: border-box;
 }
+a {
+    text-decoration: none;
+  }
+  
 
 .container{
     display:flex;
@@ -99,6 +103,7 @@ opacity: 1;
 
 .add-user{
 display: flex;
+flex-direction: row;
 justify-content:space-evenly;
 align-items: center;
 position: relative;
@@ -119,10 +124,11 @@ height: 24px;
 color: #FFFFFF;
 /* UI Properties */
 opacity: 1;
+/* border: 1px solid blueviolet; */
 }
 
 .addUser-text{
-    width: 89px;
+width: 89px;
 height: 29px;
 /* UI Properties */
 text-align: left;
@@ -130,13 +136,14 @@ font: normal normal normal 22px/29px Roboto;
 letter-spacing: 0px;
 color: #FFFFFF;
 opacity: 1;
+/* border: 1px solid red; */
 }
 
 .data-container{
     display: flex;
-    min-height: 200px;
+    max-height: 100px;
     min-width: 1280px;
-    /* border: 2px solid #42515F; */
+    /* border: 5px solid red; */
 }
 
 .data-header{
@@ -245,6 +252,15 @@ text-transform: uppercase;
 opacity: 1;
 }
 
+.header-icons{
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;  
+}
+
 #employeeTable{
     /* display: flex;
     flex-direction: column;
@@ -252,10 +268,22 @@ opacity: 1;
     align-items:flex-start; */
     min-height:200px;
     /* width: 100vw; */
-    border: 1px solid blueviolet;
+    /* border: 1px solid blueviolet; */
 
 }
+#trElement{
+    /* background-color:rebeccapurple; */
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    box-shadow: 0px 1px 3px #00000029;
+}
 
+#pens ,#trs{
+background: transparent;
+margin:8px;
+/* border: 1px solid #000000; */
+}
 /* th{
     border-top: 1px solid blueviolet;
 }
