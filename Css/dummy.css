@@ -1,0 +1,43 @@
+
+    .header-container{
+    display: flex;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 106px;
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    }
+    
+    
+    .header-icon{
+        top: 35px;
+        left: 188px;
+        width: 50px;
+        height: 47px;
+        /* UI Properties */
+        border: 1px solid #42515F;
+        /* opacity: 1; */
+        background-color: red;
+    }
+    
+    .header-text{
+        top: 32px;
+        left: 246px;
+        width: 127px;
+        height: 52px;
+    
+        /* UI Properties */
+        text-align: left;
+        font: normal normal bold 22px/25px Montserrat;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        opacity: 1;
+        color: #82A70C;
+    }
+    
+    .header-text2{
+        color: #42515F;;
+    }
+    

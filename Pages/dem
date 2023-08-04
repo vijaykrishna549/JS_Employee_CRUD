@@ -1,0 +1,33 @@
+
+function editsEmployee(
+  id,
+  name,
+  profileIcon,
+  gender,
+  department,
+  salary,
+  date
+) {
+  //   window.location.href = "http://127.0.0.1:5501/Pages/emploeeForm.html";
+  const employeeToUpdate = empData.find((employee) => {
+    console.log(employee, "emp to update employee");
+    employee.id === id;
+  });
+//   const nameInput = document.getElementById("name");
+//   const selectProfile = document.getElementsByName("Profiles1");
+//   const salaryInput = document.getElementById("Salary");
+//   const genderInput = document.getElementsByName("Gender");
+//   const departmentInput = document.getElementsByName("Department");
+//   const dates = document.getElementById("dates");
+
+//   nameInput.value = name;
+//   for (var i = 0; i < departmentInput.length; i++)
+//     departmentInput[i].checked = department;
+//   for (var i = 0; i < selectProfile.length; i++)
+//     selectProfile[i].checked = profileIcon;
+//   for (var i = 0; i < genderInput.length; i++) genderInput[i].checked = gender;
+//   dates.value = date;
+//   salaryInput.value = salary;
+
+  //   deleteById(id);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/employeeList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Employee List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <div class="header-icon"></div>
+        <div class="header-text">
+          <div class="header-text1">EMPLOYEE</div>
+          <div class="header-text2">PAYROLL</div>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <div class="details-text">Employee Details</div>
+        <div class="details-search"><i class="fa fa-search" id="srh"></i></div>
+        <div class="add-user">
+          <a href="../Pages/emploeeForm.html">
+            <div class="addUser-icon"><i class="fa fa-plus" id="pls"></i></div>
+            <div class="addUser-text">Add User</div></a
+          >
+
+          <!-- <a href="../Pages/emploeeForm.html"></a> -->
+        </div>
+      </div>
+
+      <div class="data-container">
+        <div class="data-header">
+          <div class="header-id">id</div>
+          <div class="header-name">name</div>
+          <div class="header-gender">gender</div>
+          <div class="header-department">department</div>
+          <div class="header-salary">salary</div>
+          <div class="header-sDate">start date</div>
+          <div class="header-actions">actions</div>
+        </div>
+      </div>
+      <table id="employeeTable">
+        <!-- <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr> -->
+        <!-- Employee details will be dynamically added here -->
+      </table>
+    </div>
+    <script src="../JS/employeeList.js"></script>
+  </body>
+</html>

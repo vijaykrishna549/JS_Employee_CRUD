@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Form</title>
+    <link rel="stylesheet" href="../Css/emploeeForm.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <div class="header-icon"></div>
+        <div class="header-text">
+          <div class="header-text1">EMPLOYEE</div>
+          <div class="header-text2">PAYROLL</div>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="frm">
+          <div class="form-name">Employee Payroll Form</div>
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="name" /><br /><br />
+
+          <div class="form-profile">
+            <div class="profile-text">Profile image</div>
+            <input
+              type="radio"
+              id="Profiles1"
+              name="Profiles1"
+              value="../assets\profile-images\Ellipse -1.png"
+            />
+            <div id="Profile1"></div>
+            <!-- <label for="Profiles1"><div id="Profile1"></div></label><br /> -->
+            <input
+              type="radio"
+              id="Profiles1"
+              name="Profiles1"
+              value="../assets\profile-images\Ellipse -2.png"
+            />
+            <div id="Profile2"></div>
+            <!-- <label for="Profiles1"><div id="Profile2"></div></label><br /> -->
+            <input
+              type="radio"
+              id="Profiles1"
+              name="Profiles1"
+              value="../assets\profile-images\Ellipse -3.png"
+            />
+            <div id="Profile3"></div>
+            <!-- <label for="Profiles1"><div id="Profile3"></div></label><br /><br /> -->
+            <input
+              type="radio"
+              id="Profiles1"
+              name="Profiles1"
+              value="../assets\profile-images\Ellipse -4.png"
+            />
+            <div id="Profile4"></div>
+            <!-- <label for="Profiles1"><div id="Profile4"></div></label><br /><br /> -->
+
+            <!-- <label>
+            <input
+              type="radio"
+              id="Profiles1"
+              name="Profiles1"
+              value="../assets\profile-images\Ellipse -1.png"
+            />
+          </label>
+          <img class="" src="../assets\profile-images\Ellipse -1.png" /> -->
+          </div>
+
+          <div class="form-gender">
+            <div class="gender-text">Gender</div>
+            <input type="radio" id="Gender1" name="Gender" value="Male" />
+            <label for="Gender1" id="Genders1">Male</label><br />
+
+            <input type="radio" id="Gender2" name="Gender" value="Female" />
+            <label for="Gender2" id="Genders2">Female</label><br />
+          </div>
+          <div class="form-department">
+            <div class="department-text">Department</div>
+            <input
+              type="checkbox"
+              id="Departments1"
+              name="Department"
+              value="HR"
+            />
+            <label for="Departments1"><span id="Department1">HR</span></label
+            ><br />
+            <input
+              type="checkbox"
+              id="Departments2"
+              name="Department"
+              value="Sales"
+            />
+            <label for="Departments2"><div id="Department2">Sales</div></label
+            ><br />
+            <input
+              type="checkbox"
+              id="Departments3"
+              name="Department"
+              value="Finance"
+            />
+            <label for="Departments3"><div id="Department3">Finance</div></label
+            ><br /><br />
+            <input
+              type="checkbox"
+              id="Departments4"
+              name="Department"
+              value="Engineer"
+            />
+            <label for="Departments4"
+              ><div id="Department4">Engineer</div></label
+            ><br /><br />
+            <input
+              type="checkbox"
+              id="Departments5"
+              name="Department"
+              value="Others"
+            />
+            <label for="Departments5"><div id="Department5">Others</div></label
+            ><br /><br />
+          </div>
+
+          <div class="form-salary">
+            <div class="salary-text">Salary</div>
+            <input
+              type="range"
+              id="Salary"
+              name="salary"
+              min="10000"
+              max="100000"
+              value="10000"
+              step="1000"
+              oninput="rangeValue.innerText = this.value"
+            />
+            <p id="rangeValue">10000</p>
+            <!-- /> -->
+            <!-- <label for="Salary" id="Salarys">0</label><br /> -->
+          </div>
+
+          <div class="form-date">
+            <div class="date-text">Start Date</div>
+            <input type="date" id="dates" name="dates" />
+            <!-- <label for="dates" id="datess">s</label><br /> -->
+          </div>
+
+          <div class="form-notes">
+            <div class="notes-text">Notes</div>
+            <input type="text" id="notes" name="notes" />
+            <!-- <label for="Salary" id="Salarys">0</label><br /> -->
+          </div>
+          <div class="form-buttons">
+            <button id="cancel">Cancel</button>
+            <button id="submit" type="submit">
+              Submit
+              <!-- <a href="../Pages/employeeList.html">Submit</a> -->
+            </button>
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/employeeForm.js"></script>
+  </body>
+</html>
